@@ -50,7 +50,7 @@ $(function() {
                 expect(Feed.name.length).not.toBe(0);
             });
          });
-
+         /* Used the forEach to go through the feed */
     });
 
 
@@ -69,13 +69,24 @@ $(function() {
             expect(checkForClass).toBe(true);
          });
 
+         /* Created a var to check for class that shows menu is hidden*/
+
           /* TODO: Write a test that ensures the menu changes
           * visibility when the menu icon is clicked. This test
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
           */
 
-          
+          it("displays when clicked and hides when clicked", function() {
+            //Opening click
+            $(".menu-icon-link").click();         
+            expect($("body").hasClass("menu-hidden")).toBe(false);
+
+            //Closing click
+            $(".menu-icon-link").click();
+            expect($("body").hasClass("menu-hidden")).toBe(true);
+         });
+          /* I used an event spy on the menu-icon-link click */
 
     });
 
@@ -91,6 +102,16 @@ $(function() {
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
+
+         beforeEach(function(done){
+            loadFeed(0, done);
+         });
+
+         it("are present when loadFeed is called", function() {
+            const checkEntry = $(".feed .entry").length;
+            expect(checkEntry).toBeGreaterThan(0);
+         });
+
 
     });
         

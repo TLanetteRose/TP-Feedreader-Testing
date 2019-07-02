@@ -15,15 +15,13 @@ My completed testing project is located on my [GitHub Page](https://tlanetterose
 
 I was required to write specific test based on the guidelines described for different test suites. The test suites toward the end required asynchronous functions. In these functions, I was required to use callbacks to make sure the feeds were loaded before they were tested. 
 
-* Test 1: Write a test that loops through each feed in the `allFeeds` object and ensures it has a URL defined _and_ that the URL is not empty
-    * For example, how would you use a `for...of` loop in this test?
-5. Write a test that loops through each feed in the `allFeeds` object and ensures it has a name defined and that the name is not empty
-    * Think about how you wrote the previous test. What are you testing for this time?
-6. Write a new test suite named `"The menu"`
-    * What are you `describe`-ing in this test suite?
-7. Write a test that ensures the menu element is hidden by default
-    * You'll have to analyze the HTML and the CSS to determine how the hiding/showing of the menu element is implemented
-    * What code in `app.js` is directly involved with toggling the menu on and off?
+* **Test 1:** I needed to write a test that looped through each feed in the `allFeeds` object and ensured that every feed had a URL defined _and_ that the URL was not empty.
+   
+* **Test 2:** The next test continued using `allFeeds` to loop through each feed to ensure it had a name defined and that the name was not empty. 
+  
+* **Test 3:** My next test suite, named `"The menu"`, focused on making sure the menu element was hidden by default. This required me to target the `menu-hidden` class. 
+   
+7. 
 8. Write a test that ensures the menu changes visibility when the menu icon is clicked. This test should have two expectations: does the menu display itself when clicked, and does it hide when clicked again?
     * Think about how you wrote the previous test. What is different this time around?
     * Which clickable element are you checking for?
@@ -38,14 +36,7 @@ I was required to write specific test based on the guidelines described for diff
 12. Write a test that ensures when a new feed is loaded by the `loadFeed` function that the content actually changes
     * How is this test different from the previous test?
 
-Additionally, note that:
 
- * No test should be dependent on the results of another
- * Callbacks should be used to ensure that feeds are loaded before they are tested
- * Error handling should be implemented for undefined variables and out-of-bound array access
- * When complete, all of your tests should pass
-
-When you're all finished, write a `README` file detailing all steps required to successfully run the application. If you have added additional tests, provide documentation for what these future features are and what the tests are checking for.
 
 # Contributing
 

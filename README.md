@@ -15,7 +15,7 @@ My completed testing project is located on my [GitHub Page](https://tlanetterose
 
 I was required to write specific test based on the guidelines described for different test suites. The test suites toward the end required asynchronous functions. In these functions, I was required to use callbacks to make sure the feeds were loaded before they were tested. 
 
-1. Write a test that loops through each feed in the `allFeeds` object and ensures it has a URL defined _and_ that the URL is not empty
+* Test 1: Write a test that loops through each feed in the `allFeeds` object and ensures it has a URL defined _and_ that the URL is not empty
     * For example, how would you use a `for...of` loop in this test?
 5. Write a test that loops through each feed in the `allFeeds` object and ensures it has a name defined and that the name is not empty
     * Think about how you wrote the previous test. What are you testing for this time?

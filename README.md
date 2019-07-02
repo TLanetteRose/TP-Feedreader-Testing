@@ -4,7 +4,7 @@
 
 
 ## How to Open the Application
-
+ My completed testing project is located on my [GitHub Page](https://tlanetterose.github.io/TP-Feedreader-Testing/). You may need to "Load Unsafe Scripts" in Google or "Disable Protection" in Firefox to view the page. 
 
 
 

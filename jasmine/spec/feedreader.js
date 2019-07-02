@@ -85,7 +85,7 @@ $(function() {
 
             //Closing click
             $(".menu-icon-link").click();
-            expect($("body").hasClass("menu-hidden")).toBe(true);
+            expect($("body").hasClass("menu-hidden")).toBe(false);
          });
           /* I used an event spy on the menu-icon-link click */
 

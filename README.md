@@ -1,30 +1,21 @@
 # FeedReader Project Background
 
- Welcome to my project! Last week I received the code for a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, so the developer included [Jasmine](http://jasmine.github.io/) and their first test suite! However, the developer needed to move on to another task: starting their own company. We now have to complete the test suite for this application. 
+Welcome to my project! Last week I received the code for a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, so the developer included [Jasmine](http://jasmine.github.io/) and their first test suite! However, the developer needed to move on to another task: starting their own company. We now have to complete the test suite for this application. 
 
 
 ## How to Open the Application
- My completed testing project is located on my [GitHub Page](https://tlanetterose.github.io/TP-Feedreader-Testing/). **Note:** You may need to "Load Unsafe Scripts" in **Google** or "Disable Protection" in **Firefox** to view the page. 
-
-
+### Option 1
+My completed testing project is located on my [GitHub Page](https://tlanetterose.github.io/TP-Feedreader-Testing/). **Note:** You may need to "Load Unsafe Scripts" in **Google** or "Disable Protection" in **Firefox** to view the page. 
+ 
+### Option 2
+ You can also download or clone my repository into **Git Hub Desktop** or onto your local computer drive. Once you have downloaded the repository, open the **index.html** in your browser. 
 
 
 # How I Completed My Project
 
-For a refresher (or reference) before you begin writing code, we recommend reviewing the content from [JavaScript Testing](https://www.udacity.com/course/javascript-testing--ud549). Your project will be evaluated by a Udacity code reviewer according to the [Feed Reader Testing project rubric](https://review.udacity.com/#!/rubrics/18/view). Please review for detailed project requirements.
+I was required to write specific test based on the guidelines described for different test suites. The test suites toward the end required asynchronous functions. In these functions, I was required to use callbacks to make sure the feeds were loaded before they were tested. 
 
-1. Familiarize yourself with the starter code
-    * Open up `index.html` and review the functionality of the application within your browser
-    * What is all the code in `app.js` doing? Be sure to read all code comments
-    * Check out `style.css`. How is styling applied to the application?
-2. Explore the Jasmine spec file in `feedreader.js`
-    * This is the file in which you'll be writing your tests
-    * Make sure to read all code comments here as well
-    * Review the [Jasmine documentation](http://jasmine.github.io) if needed
-3. Edit the `allFeeds` variable in `app.js` to make the provided test fail
-    * See how Jasmine visualizes this failure in your application
-    * Return the `allFeeds` variable to a passing state after reviewing the failed test
-4. Write a test that loops through each feed in the `allFeeds` object and ensures it has a URL defined _and_ that the URL is not empty
+1. Write a test that loops through each feed in the `allFeeds` object and ensures it has a URL defined _and_ that the URL is not empty
     * For example, how would you use a `for...of` loop in this test?
 5. Write a test that loops through each feed in the `allFeeds` object and ensures it has a name defined and that the name is not empty
     * Think about how you wrote the previous test. What are you testing for this time?

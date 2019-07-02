@@ -1,4 +1,5 @@
 /* feedreader.js
+ * TP-Feedreader-Testing
  *
  * This is the spec file that Jasmine will read and contains
  * all of the tests that will be run against your application.
@@ -124,6 +125,30 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+
+         //Declared var for initial and new feeds
+
+         let initialFeed;
+         let newFeed;
+
+         // Load each initial feed
+         beforeEach(function(done) {
+            loadFeed(0, function() {
+                initialFeed = $(".feed").html();
+                done();
+            });
+         });
+
+         //Compare initial and new feeds
+         it("content changes when new feed loaded", function(done) {
+            loadFeed(2, function() {
+                newFeed = $(".feed").html();
+                expect(newFeed).not.toBe(initialFeed);
+                done();
+            });
+
+         });
+
     });
         
 }());

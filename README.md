@@ -28,8 +28,7 @@ I was required to write specific test based on the guidelines described for diff
 * **Test 6:** In the test suite named `"New Feed Selection"`, my test needed to ensure that the content changed when a new feed was loaded by the `loadFeed` function 
    
 
+# Resources
 
-
-# Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+* [Jasmine Cheatsheet](https://devhints.io/jasmine)
+* [Jest Cheatsheet](https://devhints.io/jest) 

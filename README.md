@@ -17,24 +17,16 @@ I was required to write specific test based on the guidelines described for diff
 
 * **Test 1:** I needed to write a test that looped through each feed in the `allFeeds` object and ensured that every feed had a URL defined _and_ that the URL was not empty.
    
-* **Test 2:** The next test continued using `allFeeds` to loop through each feed to ensure it had a name defined and that the name was not empty. 
+* **Test 2:** The next test continued using `allFeeds` object to loop through each feed to ensure it had a name defined and that the name was not empty. 
   
 * **Test 3:** My next test suite, named `"The menu"`, focused on making sure the menu element was hidden by default. This required me to target the `menu-hidden` class. 
+
+* **Test 4:** This test checked to see if the visibility of the menu changed once the `menu-icon-link` is clicked. 
+
+* **Test 5:** The next test suite is called `"Initial Entries"`. This suite included a test which checked to see if there is a single `.entry` element in the `.feed` container. 
+    
+* **Test 6:** In the test suite named `"New Feed Selection"`, my test needed to ensure that the content changed when a new feed was loaded by the `loadFeed` function 
    
-7. 
-8. Write a test that ensures the menu changes visibility when the menu icon is clicked. This test should have two expectations: does the menu display itself when clicked, and does it hide when clicked again?
-    * Think about how you wrote the previous test. What is different this time around?
-    * Which clickable element are you checking for?
-    * How do you "simulate" a mouse click that element without actually clicking it?
-9. Write a test suite named `"Initial Entries"`
-    * What are you `describe`-ing in this test suite?
-10. Write a test that ensures when the `loadFeed` function is called and completes its work, there is at least a single `.entry` element within the `.feed` container
-    * How does Jasmine's `beforeEach()`function work?
-    * How does the `loadFeed()` function in `app.js` work? Is it synchronous or asynchronous?
-11. Write a test suite named `"New Feed Selection"`
-    * What are you `describe`-ing in this test suite?
-12. Write a test that ensures when a new feed is loaded by the `loadFeed` function that the content actually changes
-    * How is this test different from the previous test?
 
 
 
